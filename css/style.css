@@ -1,0 +1,44 @@
+/*another preloader*/
+.dot{
+    
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    background-color: #BBB9B9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.dot span{
+    width: 10px; 
+    height: 10px;
+    border-radius: 50%;
+    background-color: blue;
+    margin: 0 15px;
+    animation: google  1s linear infinite forwards alternate;
+   
+}
+.dot span:nth-child(1){
+    background-color: dodgerblue;
+    
+}
+.dot span:nth-child(2){
+    background-color: red;
+    animation-delay: 0.25s;
+}
+.dot span:nth-child(3){
+    background-color: yellow;
+    animation-delay:0.5s ;
+}
+.dot span:nth-child(4){
+    background-color: green;
+animation-delay: 0.75s;
+}
+@keyframes google {
+    0%{
+transform: translateY(0);
+    }
+    100%{
+transform: translateY(-80px);
+    }
+}
